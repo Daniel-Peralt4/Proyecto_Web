@@ -1,0 +1,48 @@
+*{
+    font-family: sans-serif;
+}
+
+nav{
+    display: block;
+    position: relative;
+    top: 0;
+    background-color: rgb(30, 30, 197);
+    width: 100%;
+    padding: 12px 100px;
+}
+
+.principal{
+    margin-left: -50px;
+    font-size: 30px;
+}
+
+.principal a:hover{
+    color: whitesmoke;
+}
+
+li{
+    display: inline;
+    font-size: 20px;
+    padding: 12px 30px;
+    list-style-type: none;
+}
+
+ul li{
+    margin-left: 40px;
+}
+
+ul li a{
+    color: whitesmoke;
+}
+
+a:link{
+    text-decoration: none;
+}
+.opciones a:hover{
+    color: rgb(30, 30, 197);
+    text-decoration: none;
+    background-color: rgb(245, 244, 248);
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 0;
+}
