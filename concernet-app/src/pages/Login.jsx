@@ -31,34 +31,34 @@ const Login = ()=>{
     return(
         <>
             <div style={{ color: 'red' }}>{mensaje}</div>
-                <body>
-                    <div className="contenedor">
-                        <form onSubmit={handleSubmitEvent} className="animate__animated animate__fadeInUp">
-                            <h1 className="titulo">CONCERNET</h1>
-                            <div className="form_control">
-                                <label htmlFor="user-name"></label>
-                                <input type="text" id="user-name" name="username" aria-describedby="user-name"
-                                    aria-invalid="false" onChange={handleInput} placeholder="Usuario"/>
-                                <div id="user-name" className="sr-only">
-                                    Por favor ingresar un nombre de usuario válido (mínimo 6 caracteres).
+                <div id="body">
+                    <div  className="animate__animated animate__fadeInUp">
+                        <div className="contenedor">
+                            <form onSubmit={handleSubmitEvent}>
+                                <h1 className="titulo">CONCERNET</h1>
+                                <div className="form_control">
+                                    <label htmlFor="user-name"></label>
+                                    <input type="text" id="user-name" name="username" aria-describedby="user-name"
+                                        aria-invalid="false" onChange={handleInput} placeholder="Usuario"/>
+                                    <div id="user-name" className="sr-only">
+                                        Por favor ingresar un nombre de usuario válido (mínimo 6 caracteres).
+                                    </div>
                                 </div>
-                            </div>
-                            <br></br>
-                            <div className="form_control">
-                                <label htmlFor="password"></label>
-                                <input type="password" id="password" name="password" aria-describedby="user-password"
-                                    onChange={handleInput} placeholder="Contraseña"/>
-                                <div id="user-password" className="sr-only">
-                                    Por favor ingresar una contraseña válida (mínimo 6 caracteres).
+                                <br></br>
+                                <div className="form_control">
+                                    <label htmlFor="password"></label>
+                                    <input type="password" id="password" name="password" aria-describedby="user-password"
+                                        onChange={handleInput} placeholder="Contraseña"/>
+                                    <div id="user-password" className="sr-only">
+                                        Por favor ingresar una contraseña válida (mínimo 6 caracteres).
+                                    </div>
                                 </div>
-                            </div>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <button className="btn-submit">Iniciar sesión</button>
-                        </form>
+                                <br></br>
+                                <button className="btn-submit">Iniciar sesión</button>
+                            </form>
+                        </div>
                     </div>
-                </body>
+                </div>
         </>
     );
 };
