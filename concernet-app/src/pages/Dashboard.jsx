@@ -16,19 +16,19 @@ const Dashboard = () =>{
                 <br></br>
                 <h3 className="subEspacios">Espacions comunitarios</h3>
                 <div className="piscinaContexto">
-                    <img src={piscinaPrincipal} alt="PiscinaInicio"/>
+                    <img src={piscinaPrincipal} alt="PiscinaInicio" title="PISCINA"/>
                     <span>
-                        Dentro de los espacios comunitarios contamos con una pisicina en donde 
-                        las personas pueden acceder a ella los fines de semana
+                        Tendremos los espacios comunitarios que brinda el conjunto residencial hacia
+                        las personas para que puedan recrearse, sin olvidar que somos una comunidad
                     </span>
                 </div>
                 <h3 className="subViviendas">Viviendas</h3>
                 <div className="viviendaContexto">
                     <span>
-                        Además contamos con una cancha de futbol en donde las personas pueden 
-                        recrearse a cualquier hora, sin olvidar que es para todos
+                        Además contará con un apartado de viviendas para los propietarios que deseen
+                        vender o arrendar su propiedad
                     </span>
-                    <img src={viviendaPrincipal} alt="CanchaInicio"/>
+                    <img src={viviendaPrincipal} alt="CanchaInicio" title="VIVIENDA"/>
                 </div>
             </div>
         </div>
