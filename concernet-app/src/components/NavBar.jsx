@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import '../CSS/NavBar.css';
+import { useAuth } from "./AuthProvider";
 
 const NavBar = ()=>{
+    const auth = useAuth();
     return(
         <div className="navBar">
             <nav>
@@ -19,8 +21,12 @@ const NavBar = ()=>{
                     <li className="opciones">
                         <Link to="/about">Acerca de</Link>
                     </li>
-                    <li className="opciones">
-                        <Link to="/login">Cerrar sesión</Link>
+                    <li id="cuenta" className="opciones">{auth.user}
+                        <ul className="listaEscondida">
+                            <li>
+                                <Link to="/login">Cerrar sesión</Link>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </nav>

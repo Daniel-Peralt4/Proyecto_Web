@@ -39,7 +39,7 @@ const Login = ()=>{
                                 <div className="form_control">
                                     <label htmlFor="user-name"></label>
                                     <input type="text" id="user-name" name="username" aria-describedby="user-name"
-                                        aria-invalid="false" onChange={handleInput} placeholder="Usuario"/>
+                                        aria-invalid="false" onChange={handleInput} placeholder="daniel"/>
                                     <div id="user-name" className="sr-only">
                                         Por favor ingresar un nombre de usuario válido (mínimo 6 caracteres).
                                     </div>
@@ -48,7 +48,7 @@ const Login = ()=>{
                                 <div className="form_control">
                                     <label htmlFor="password"></label>
                                     <input type="password" id="password" name="password" aria-describedby="user-password"
-                                        onChange={handleInput} placeholder="Contraseña"/>
+                                        onChange={handleInput} placeholder="12345"/>
                                     <div id="user-password" className="sr-only">
                                         Por favor ingresar una contraseña válida (mínimo 6 caracteres).
                                     </div>
